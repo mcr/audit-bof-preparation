@@ -30,7 +30,7 @@ The working group will not define auditing policies or compliance frameworks, bu
 ## Deliverables
 The AUDIT working group is expected to produce:
 
-1. **Architecture for AI Agent Auditing**
+1. **Architecture for Autononomous Agent Auditing**
 An Informational RFC describing roles, trust relationships, and data flows for interoperable auditing, including the relationship between user-facing and system-facing audit signals.
 
 2. **Audit Data Models and Semantics**
