@@ -1,6 +1,7 @@
 # Agent Use of Delegation and Interaction Traceability (AUDIT) Working Group Charter
 
-Autonomous and semi-autonomous software agents, including those based on LLM-based machine learning systems, are increasingly deployed to act on behalf of users, organizations, and services across the Internet. These agents interact across multiple administrative or trust domains and can initiate actions without direct human oversight at each step.
+Autonomous and semi-autonomous software agents, including those based on LLM-based machine learning systems, are increasingly deployed to act on behalf of users, organizations, and services across the Internet. 
+These agents interact across multiple administrative or trust domains and can initiate actions without direct human oversight at each step.
 
 This introduces challenges for auditability, accountability, and transparency, including:
 
@@ -14,14 +15,19 @@ Agents participate in two distinct classes of interactions that must be audited:
 * User-facing interactions, such as prompts, conversations, and approvals, capturing user intent and human-in-the-loop decisions
 * System-facing interactions, such as API calls, tool usage, and delegation to other agents or services
 
-Effective auditing requires linking user intent to resulting system actions across protocol and administrative boundaries. While traditional workflows support evolving authorization, these transitions are usually explicit and predefined. Agent systems introduce dynamic, fine-grained authorization changes that arise during execution, driven by agent decisions, delegation, and human interaction. Auditing must therefore capture authorization as a time-evolving state and correlate these transitions across interactions and domains.
+Effective auditing requires linking user intent to resulting system actions across protocol and administrative boundaries. 
+While traditional workflows support evolving authorization, these transitions are usually explicit and predefined. 
+Agent systems introduce dynamic, fine-grained authorization changes that arise during execution, driven by agent decisions, delegation, and human interaction. 
+Auditing must therefore capture authorization as a time-evolving state and correlate these transitions across interactions and domains.
 
-Additionally, Agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. Auditing must also distinguish between user, agent, and service identities, and ensure audit data remains interpretable across systems without shared assumptions.
+Additionally, Agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. 
+Auditing must also distinguish between user, agent, and service identities, and ensure audit data remains interpretable across systems without shared assumptions.
 
 ## Scope and Goals
 The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols.
 
-The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains.
+The group will focus on architectures, protocol-layer specifications, and data representations that enable systems to record, exchange, and verify audit-relevant information across user-facing and system-facing interactions. 
+This includes capturing delegation chains, evolving authorization state, and enabling consistent interpretation and correlation of audit data across domains.
 
 The working group will compose existing IETF building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency (SCITT), context propagation (W3C Trace Context), and conversation containers (vCon), and will define only the additional protocol elements, data models, and best practices needed to make these compose coherently for the AI agent case.
 
