@@ -16,7 +16,8 @@ Agents participate in two distinct classes of interactions that must be audited:
 
 Effective auditing requires linking user intent to resulting system actions across protocol and administrative boundaries. While traditional workflows support evolving authorization, these transitions are usually explicit and predefined. Agent systems introduce dynamic, fine-grained authorization changes that arise during execution, driven by agent decisions, delegation, and human interaction. Auditing must therefore capture authorization as a time-evolving state and correlate these transitions across interactions and domains.
 
-Additionally, Agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. Auditing must also distinguish between user, agent, and service identities, and ensure audit data remains interpretable across systems without shared assumptions.
+Additionally, Agent behavior may be non-deterministic and not fully predefined, requiring auditing mechanisms to capture execution context and structure as they emerge. 
+Auditing must also distinguish between user, agent, and service identities, and ensure audit data can be selectively disclose such that it remains interpretable across systems without shared assumptions.
 
 ## Scope and Goals
 The AUDIT working group will define interoperable mechanisms for auditing and accountability of Agents and delegated systems across Internet protocols.
