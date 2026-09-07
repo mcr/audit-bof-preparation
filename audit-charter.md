@@ -6,7 +6,7 @@ This introduces challenges for auditability, accountability, and transparency, i
 
 * Difficulty attributing actions to a specific user, agent instance, or delegation context
 * Loss of visibility across long-running or distributed workflows
-* Inconsistent capture of delegation relationships, authorization context, and identity transitions
+* Inconsistent capture of delegation relationships, dynamic authorization context, and identity transitions
 * Cross-domain interactions lack interoperable means to exchange or verify audit-relevant information about the participating agents and their interactions
 
 Agents participate in two distinct classes of interactions that must be audited:
